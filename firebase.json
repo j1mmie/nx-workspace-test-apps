@@ -1,0 +1,27 @@
+{
+  "firestore": {
+    "rules": "apps/functions/firestore.rules",
+    "indexes": "apps/functions/firestore.indexes.json"
+  },
+  "functions": {
+    "codebase": "functions",
+    "predeploy": ["npx nx build functions"],
+    "runtime": "nodejs18",
+    "source": "dist/apps/functions"
+  },
+  "emulators": {
+    "auth": {
+      "port": 9099
+    },
+    "functions": {
+      "port": 5001
+    },
+    "firestore": {
+      "port": 8080
+    },
+    "ui": {
+      "enabled": true
+    },
+    "singleProjectMode": true
+  }
+}

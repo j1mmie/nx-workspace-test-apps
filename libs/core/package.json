@@ -1,0 +1,8 @@
+{
+  "name": "@nx-workspace-test-apps/core",
+  "version": "0.0.1",
+  "dependencies": {
+    "canonicalize": "^1.0.8",
+    "secp256k1": "^5.0.0"
+  }
+}
